@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF5EC89E260ECB11005D2EAB /* BindingOnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EC89D260ECB10005D2EAB /* BindingOnChange.swift */; };
 		BF87031E260291FA00565291 /* OrderedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF87031D260291FA00565291 /* OrderedSet.swift */; };
 		BFE3F8DE25F8B71C00135717 /* ToDoByApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE3F8DD25F8B71C00135717 /* ToDoByApp.swift */; };
 		BFE3F8E025F8B71C00135717 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE3F8DF25F8B71C00135717 /* ContentView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF5EC89D260ECB10005D2EAB /* BindingOnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingOnChange.swift; sourceTree = "<group>"; };
 		BF87031D260291FA00565291 /* OrderedSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderedSet.swift; sourceTree = "<group>"; };
 		BFE3F8DA25F8B71C00135717 /* ToDoBy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoBy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE3F8DD25F8B71C00135717 /* ToDoByApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoByApp.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				BFE3F91325F96EA200135717 /* Indexed.swift */,
 				BF87031D260291FA00565291 /* OrderedSet.swift */,
+				BF5EC89D260ECB10005D2EAB /* BindingOnChange.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			files = (
 				BFE3F8FB25F8B79300135717 /* Task.swift in Sources */,
 				BFE3F90D25F8B84400135717 /* DayView.swift in Sources */,
+				BF5EC89E260ECB11005D2EAB /* BindingOnChange.swift in Sources */,
 				BFE3F90925F8B83700135717 /* ScheduleView.swift in Sources */,
 				BFE3F91025F959BA00135717 /* Store.swift in Sources */,
 				BFE3F90325F8B82300135717 /* Schedule.swift in Sources */,
@@ -329,6 +333,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoBy/Preview Content\"";
+				DEVELOPMENT_TEAM = K9L75UQUEP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ToDoBy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -350,6 +355,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoBy/Preview Content\"";
+				DEVELOPMENT_TEAM = K9L75UQUEP;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ToDoBy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

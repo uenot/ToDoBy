@@ -66,7 +66,6 @@ struct ScheduleView: View {
             })
     }
     
-    
     var body: some View {
         VStack {
             DayView(day: observedDay)

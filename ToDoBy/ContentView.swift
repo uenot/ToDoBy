@@ -13,13 +13,17 @@ struct ContentView: View {
     var body: some View {
         VStack {
             ScheduleView(schedule: $store.schedule)
+//            Button("Reset UserDefaults") {
+//                if let bundleID = Bundle.main.bundleIdentifier {
+//                    UserDefaults.standard.removePersistentDomain(forName: bundleID)
+//                }
+//            }
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(store: Store(Schedule(days: [Day([Task("day 1")]),
-                                           Day([Task("day 2")], date: Calendar.current.date(byAdding: .day, value: 1, to: Date())!)])))
+        ContentView(store: Store())
     }
 }

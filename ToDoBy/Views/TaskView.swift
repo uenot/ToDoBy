@@ -10,28 +10,39 @@ import SwiftUI
 struct TaskView: View {
     var task: Binding<Task>
     
+    @State var manualUpdater = false
+    
+    func update() {
+        manualUpdater.toggle()
+    }
+    
     var body: some View {
         VStack {
             TextField("Rename", text: task.name)
                 .padding()
             HStack {
-                Toggle("Specify Time", isOn: task.useTime)
+                Toggle("Specify Time", isOn: task.useTime.onChange { _ in
+                    update()
+                })
                 if task.useTime.wrappedValue {
                     DatePicker("", selection: task.currentDate, displayedComponents: .hourAndMinute)
                         .labelsHidden()
                 }
             }
-            Toggle("Add Details", isOn: task.useDetails)
+            Text("\(task.useTime.wrappedValue.description)")
+            Toggle("Add Details", isOn: task.useDetails.onChange { _ in
+                update()
+            })
             if task.useDetails.wrappedValue {
-                TextField("Details", text: task.details)
+                TextEditor(text: task.details)
+                    .foregroundColor(.secondary)
             }
         }
     }
 }
-/*
-struct TaskView_Previews: PreviewProvider {
-    static var previews: some View {
-        TaskView()
-    }
-}
-*/
+
+//struct TaskView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TaskView()
+//    }
+//}
